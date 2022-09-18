@@ -32,7 +32,12 @@ export class App extends Component {
 
     if (this.state.contacts.find(elem => elem.name === this.state.name)) {
       alert(`${this.state.name} is already in contacts`);
-      evt.target.reset();
+      this.setState(() => {
+        return {
+          name: '',
+          number: '',
+        };
+      });
       return;
     }
 
@@ -49,20 +54,20 @@ export class App extends Component {
   }
 
   handleNameChange(evt) {
-    this.setState(prevState => {
-      return { ...prevState, name: evt.target.value };
+    this.setState(() => {
+      return { name: evt.target.value };
     });
   }
 
   handleNumberChange(evt) {
-    this.setState(prevState => {
-      return { ...prevState, number: evt.target.value };
+    this.setState(() => {
+      return { number: evt.target.value };
     });
   }
 
   handleFilterChange(evt) {
-    this.setState(prevState => {
-      return { ...prevState, filter: evt.target.value };
+    this.setState(() => {
+      return { filter: evt.target.value };
     });
   }
 
@@ -75,7 +80,6 @@ export class App extends Component {
   deleteContact(evt) {
     this.setState(prevState => {
       return {
-        ...prevState,
         contacts: prevState.contacts.filter(
           elem => elem.id !== evt.target.value
         ),
