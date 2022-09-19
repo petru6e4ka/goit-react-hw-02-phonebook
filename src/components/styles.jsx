@@ -31,29 +31,6 @@ export const Button = styled.button`
   }
 `;
 
-export const BlockContainer = styled.div`
-  min-height: 100vh;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  background: #edf0f7;
-
-  h1 {
-    font-size: 2.125rem;
-    line-height: 1.235;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    line-height: 1.334;
-  }
-`;
-
-export const ContactFormBlock = styled.form`
-  display: flex;
-  margin-bottom: 25px;
-`;
-
 export const Input = styled.input`
   display: block;
   background: none;
@@ -76,27 +53,20 @@ export const Input = styled.input`
   }
 `;
 
-export const ContactListBlock = styled.ul`
+export const BlockContainer = styled.div`
+  min-height: 100vh;
+  padding: 25px;
   display: flex;
   flex-direction: column;
+  background: #edf0f7;
 
-  li {
-    padding: 10px;
-    border-bottom: 1px solid rgba(25, 118, 210, 0.5);
-
-    button {
-      display: inline-block;
-      margin: 0 10px;
-      background: none;
-      outline: none;
-      border-radius: 4px;
-      border: 1px solid rgba(25, 118, 210, 0.5);
-      cursor: pointer;
-    }
+  h1 {
+    font-size: 2.125rem;
+    line-height: 1.235;
   }
-`;
 
-export const FilterBlock = styled.div`
-  display: flex;
-  flex-direction: column;
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.334;
+  }
 `;

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { Button, ContactFormBlock, Input } from '../styles';
+import { Button, Input } from '../styles';
+import { ContactFormBlock } from './styles';
 
 export const ContactForm = ({
   name,

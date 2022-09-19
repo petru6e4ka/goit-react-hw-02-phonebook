@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { Input, FilterBlock } from '../styles';
+import { Input } from '../styles';
+import { FilterBlock } from './styles';
 
 export const Filter = ({ filter, handleFilterChange }) => {
   return (

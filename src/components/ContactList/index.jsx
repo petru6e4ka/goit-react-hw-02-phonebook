@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ContactListBlock } from '../styles';
+import { ContactListBlock } from './styles';
 
 export const ContactList = ({ contacts, deleteContact }) => {
   return (
